@@ -1,0 +1,84 @@
+////////////////////// Comandos importantes ///////
+
+Instalación de pipenv (por carpeta)
+> python3 install pipenv
+
+Instalar entorno de Python en especifico si esta versión existe en OS
+> pipenv --python:3.8.10
+
+Formas de instalar librerias
+> pipenv run pip install numpy
+> pipenv install numpy
+
+Revisar librerías instaladas en el entorno local
+> pipenv graph
+> pipenv run pip list
+
+Revisar donde quedo instalado el entorno
+> pienv --venv
+
+Todos los comandos que se pueden utilizar con pipenv
+> pipenv --help
+
+Eliminar entorno local
+> pipenv --rm
+
+
+
+///////////////// Pasos para iniciar un proyecto de Django ////////
+
+Librerias necesarias 
+> pipenv install django django-ckeditor Pillow pylint pylint-django pylint-celery
+
+Inciar web personal back
+> pipenv run django-admin startproject webpersonal
+
+Seguir los pasos del repositorio
+https://gist.github.com/hcosta/6e4066ad1b938c888546c5f0a9616c48
+
+Para iniciar el entorno local en el proyecto, se puede empezar a utilizar como cualquier entorno
+> pipenv shell
+
+Se puede configurar los alias o como un Makefile directamente de Pipfile
+> nano Pipfile
+
+Se escribe lo siguiente en ese archivo
+[scripts]
+webpersonal = "python webpersonal/manage.py runserver"
+
+Luego se corre
+> pipenv run webpersonal
+
+
+////////// template tags ////////////
+
+url: 
+https://docs.djangoproject.com/en/5.1/ref/templates/builtins/
+
+1. 
+{% firstof var1 var2 var3 %}
+Outputs the first argument variable that is not “false” (i.e. exists, is not empty, is not a false boolean value, and is not a zero numeric value). Outputs nothing if all the passed variables are “false”.
+
+2.
+<ul>
+{% for athlete in athlete_list %}
+    <li>{{ athlete.name }}</li>
+{% empty %}
+    <li>Sorry, no athletes in this list.</li>
+{% endfor %}
+</ul>
+
+////////// filtros necesarios //////
+https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#slice
+
+
+////// Fields Model //////////
+
+https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types
+
+https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-options
+
+
+ 
+
+
