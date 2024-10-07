@@ -1,23 +1,24 @@
 {% extends 'core/base.html' %}
 {% load static %}
-{% block title %} Acerca de {% endblock title%}
+{% block title %} About {% endblock title%}
 
 {% block background %}{% static 'core/img/about-bg.jpg' %}{% endblock background %}
 
 {% block headers %}
-<h1>Acerca de</h1>
-<span class="subheading">Biografía</span>
+<h1>About</h1>
+<span class="subheading">Biography</span>
 {% endblock headers %}
 
 {% block content %}
 <div class="row"> 
   <div class="col-lg-3 col-md-4 offset-lg-1">
-    <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    <img class="img-fluid avatar" src="{% static 'core/img/avatar_diego.jpg' %}" alt="">
   </div>
   <div class="col-lg-7 col-md-8">
-    <h2 class="section-heading">Juan Pérez</h2>   
-    <p>Nacido en... lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit...</p>
+    <h2 class="section-heading">Diego Cabrera</h2>   
+    <p>I'm Diego Cabrera, a web developer with a practical and adaptable approach, deeply passionate about technology and continuous learning. I’m a self-motivated and collaborative individual who strives to create a positive and productive work environment. I enjoy working with teams and bringing innovative, effective solutions to each project, with a results-oriented mindset and a constant drive to tackle new challenges.</p>
+    <p>With a background in Electronic Engineering, I’ve spent the last four years developing software and building robust web applications. My expertise is in Python, using frameworks such as Django, FastAPI, and Flask, and I also have experience with JavaScript and Node.js. Throughout my career, I have contributed to various industries, including finance, research, and hospitality, where I’ve developed solutions tailored to each sector’s needs.</p>
+    <p>I have solid knowledge of cloud platforms such as AWS, Azure, and GCP, and I utilize Docker and Kubernetes for efficient application deployment. Additionally, I leverage cloud-based AI tools to optimize applications, applying machine learning and computer vision. My experience extends to Linux and Windows operating systems and the use of Git and GitHub for version control. My skills in managing relational and non-relational databases allow me to adapt my expertise to the specific requirements of each project.</p>
   </div>
 </div>
 {% endblock content %}    
